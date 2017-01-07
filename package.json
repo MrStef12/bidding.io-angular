@@ -1,5 +1,5 @@
 {
-  "name": "angular-quickstart",
+  "name": "bidding.io-angular",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
@@ -25,11 +25,13 @@
     "@angular/platform-browser": "~2.4.0",
     "@angular/platform-browser-dynamic": "~2.4.0",
     "@angular/router": "~3.4.0",
+    "@types/socket.io-client": "^1.4.29",
     "angular-in-memory-web-api": "~0.2.4",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "jquery": "^3.1.1",
     "rxjs": "5.0.1",
+    "socket.io-client": "^1.7.2",
     "systemjs": "0.19.40",
     "zone.js": "^0.7.4"
   },

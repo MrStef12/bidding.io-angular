@@ -24,7 +24,7 @@
                         <a [routerLink]="['/auction', auction.id]">{{auction.name}}</a>
                     </td>
                     <td>{{auction.price}}</td>
-                    <td>{{auction.endDate}}</td>
+                    <td>{{convertDate(auction.endDate)}}</td>
                 </tr>
             </tbody>
         </table>

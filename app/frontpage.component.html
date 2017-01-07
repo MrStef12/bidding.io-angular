@@ -15,8 +15,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="danger">
+                <tr class="danger" *ngIf="error">
                     <td colspan="4" style="text-align: center;">Something went wrong. Please try again later. See the console for more information.</td>
+                </tr>
+                <tr *ngFor="let auction of auctions">
+                    <td>{{auction.id}}</td>
+                    <td>
+                        <a [routerLink]="['/auction', auction.id]">{{auction.name}}</a>
+                    </td>
+                    <td>{{auction.price}}</td>
+                    <td>{{auction.endDate}}</td>
                 </tr>
             </tbody>
         </table>

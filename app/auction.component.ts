@@ -23,7 +23,6 @@ export class AuctionComponent implements OnInit, OnDestroy {
         this.sub = this.route.params.subscribe(params => {
             var id = +params['aId'];
             var url = this.url + "/auction/" + id;
-            console.log(url);
             this.socket = io.connect(url);
             this.socket.on("auctionInfo", (info: Auction) => {
                 this.auctionInfo = info;

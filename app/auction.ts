@@ -3,7 +3,7 @@ export class Auction {
     name: string;
     price: number;
     description: string;
-    createdDate: Date;
-    endDate: Date;
+    createdDate: string;
+    endDate: string;
     quantity: number;
 }
